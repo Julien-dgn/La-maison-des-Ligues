@@ -15,8 +15,10 @@ pour l'inscription c'est très simple je le ferais en php avec une base de donn�
 - son mot de passe
 - son adresse électronique 
 - et ses coordonnées
+lors de l'inscription la personne aura aussi le possibilité de mettre un avatar 
   si un compte possède déjà le même pseudo ou adresse mail il sera impossible de s'inscrire ,toute ses données seront stocker dans la base de données préconçu pour.
   La page ou sera le formulaire sera en html et php
+  
 Forum-- Julien/Matthieu
 
 Achat/Vente-- Axel/Alexis
