@@ -10,11 +10,23 @@ Accueil-- Alexis/Catherine
        -En bas de page ce trouve un compteur de visite à gauche et tout ce qui concerne les Credits/Contacts etc.. à droite.
 
 Inscription-- Axel
-
+pour l'inscription c'est très simple je le ferais en php avec une base de données .La personne faisant son inscription va devoir mettre:
+- son pseudo
+- son mot de passe
+- son adresse électronique 
+- et ses coordonnées
+  si un compte possède déjà le même pseudo ou adresse mail il sera impossible de s'inscrire ,toute ses données seront stocker dans la base de données préconçu pour.
+  La page ou sera le formulaire sera en html et php
 Forum-- Julien/Matthieu
 
 Achat/Vente-- Axel/Alexis
-
+Pour 'achat/vente je vais devoir faire en sorte que tout objet mise en vente sois retrouvable pour les acheteur par des info précise:
+- une image
+- un nom de produit 
+- le type d'équipement (ballon, chaussure, ect...)
+- les infos du vendeur (nom, adresse, tel )
+- le prix
+ces pages seront programmer en html ,css et php
 Album photo par ligue-- Julien/Matthieu
 Admin de la ligue qui gère cet album
 
