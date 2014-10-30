@@ -1,37 +1,69 @@
+Pour l'apparence visuel du site, cf. les images fait par Cath.
+
+
 Accueil-- Alexis/Catherine
+	La page d'accueil sera programmer en HTML/CSS/PHP/JAVASCRIPT
     Dans cette page ce trouve les liens suivants et leurs emplacements :
-       -Dans la partie supérieur de la page se trouve le logo et le titre du site ainsi que, sur la droite, la zone de connexion
+        -Dans la partie supérieur de la page se trouve le logo et le titre du site (qui amene à la page d'accueil) ainsi que, sur la droite, la zone de connexion
         et d'inscription (celle-ci amene à la page d'inscription).
-       -En dessous, un slider à defilement de droite à gauche representant les differents sports sous forme de photo.
+        -En dessous, un slider à defilement de droite à gauche representant les differents sports sous forme de photo.
         Chaque photo est un lien qui amene soit sur le forum, soit sur la partie vente/achat correspondant au sport.
-       -Au centre, deux blocs sont affichés (celui de gauche à comme titre FORUM et celui de droite VENTE/ACHAT), chacun menant
+        -Au centre, deux blocs sont affichés (celui de gauche à comme titre FORUM et celui de droite VENTE/ACHAT), chacun menant
         à leur page web respective.
-       -En dessous peut-être un autre bloc module
-       -En bas de page ce trouve un compteur de visite à gauche et tout ce qui concerne les Credits/Contacts etc.. à droite.
+        -En dessous peut-être un autre bloc module
+        -En bas de page ce trouve un compteur de visite à gauche et tout ce qui concerne les Credits/Contacts etc.. à droite.
+
 
 Inscription-- Axel
-pour l'inscription c'est très simple je le ferais en php avec une base de données .La personne faisant son inscription va devoir mettre:
-- son pseudo
-- son mot de passe
-- son adresse électronique 
-- et ses coordonnées
-lors de l'inscription la personne aura aussi le possibilité de mettre un avatar 
-  si un compte possède déjà le même pseudo ou adresse mail il sera impossible de s'inscrire ,toute ses données seront stocker dans la base de données préconçu pour.
-  La page ou sera le formulaire sera en html et php
+    L'inscription se fera sous forme de formulaire et sera programmer en HTML/CSS/PHP en liaison avec une base de donnée.
+    Dans cette page ce trouve les liens suivants et leurs emplacements :
+        -Dans la partie supérieur de la page se trouve le logo et le titre du site (qui amene à la page d'accueil) ainsi que, sur la droite, la zone de connexion
+        et d'inscription (celle-ci amene à la page d'inscription).
+   		-Au centre, un formulaire dans un bloc sera affiché.
+		 	La personne faisant son inscription devra fournir:
+		        - son pseudo
+		        - son mot de passe
+		        - son adresse électronique 
+		        - ses coordonnées (Nom, Prenom, Adresse, etc..)
+		        - possibilité d'importer une image pour son avatar
+		        - et un bouton enregistrer
+		-En bas de page ce trouve un compteur de visite à gauche et tout ce qui concerne les Credits/Contacts etc.. à droite.
+    Si un compte possède déjà le même pseudo ou adresse mail, il sera impossible de s'inscrire,
+    toute données enregistrés étant stocker dans la base de données préconçu pour.
+    
   
 Forum-- Julien/Matthieu
 
+
 Achat/Vente-- Axel/Alexis
-Pour 'achat/vente je vais devoir faire en sorte que tout objet mise en vente sois retrouvable pour les acheteur par des info précise:
-- une image
-- un nom de produit 
-- le type d'équipement (ballon, chaussure, ect...)
-- les infos du vendeur (nom, adresse, tel )
-- le prix
-ces pages seront programmer en html ,css et php
+	La page d"achat/vente" sera programmer en HTML/CSS/PHP.
+	Dans cette page ce trouve les liens suivants et leurs emplacements :
+        -Dans la partie supérieur de la page se trouve le logo et le titre du site (qui amene à la page d'accueil) ainsi que, sur la droite, la zone de connexion
+        et d'inscription (celle-ci amene à la page d'inscription).
+   		-Au centre, un bloc sera affiché avec plusieurs onglets comme décrit ci-dessous :
+   			*Sur le dessus du bloc
+   				-l'onglet Achat
+   				-l'onglet Vente
+   			*Sur le côté gauche
+   				-Plusieurs onglets de differentes catégorie de sport (tennis, foot, basket...) qui,
+   				quand activé (seulement un à la fois), affichent leur sous catégorie dans des onglets plus petits (chaussure, équipement...)
+   			Si l'onglet Achat est séléctionné, le bloc affiche les différents produits mis en vente sur le site correspondant
+   			à la recherche.
+   			Si l'onglet Vente est sélectionné, le bloc affiche un formulaire à remplir pour pouvoir mettre en vente son produit
+   			comme suis :
+   				- une(des) image(s) du produit
+				- le dénominatif du produit 
+				- le sport rélié au produit mis en vente (Foot, Tennis, etc..) sous forme de liste déroulante
+				- le type du produit mis en vente (ballon, chaussure, ect...) sous forme de liste déroulante
+				- les infos du vendeur (nom, adresse, tel, etc..)
+				- le prix
+				- et un bouton envoyer
+		-En bas de page ce trouve un compteur de visite à gauche et tout ce qui concerne les Credits/Contacts etc.. à droite.
+
+
 Album photo par ligue-- Julien/Matthieu
-Admin de la ligue qui gère cet album
+	Admin de la ligue qui gère cet album
+
 
 Compteur visite - Julien
-
-Nombre de visiteur conecté 
+	Nombre de visiteur conecté 
