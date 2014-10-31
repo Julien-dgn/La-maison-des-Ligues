@@ -1,69 +1,69 @@
-Pour l'apparence visuel du site, cf. les images fait par Cath.
+Pour l'apparence visuel du site, cf. les images faites par Cath.
 
 
 Accueil-- Alexis/Catherine
-	La page d'accueil sera programmer en HTML/CSS/PHP/JAVASCRIPT
-    Dans cette page ce trouve les liens suivants et leurs emplacements :
-        -Dans la partie supérieur de la page se trouve le logo et le titre du site (qui amene à la page d'accueil) ainsi que, sur la droite, la zone de connexion
-        et d'inscription (celle-ci amene à la page d'inscription).
-        -En dessous, un slider à defilement de droite à gauche representant les differents sports sous forme de photo.
-        Chaque photo est un lien qui amene soit sur le forum, soit sur la partie vente/achat correspondant au sport.
-        -Au centre, deux blocs sont affichés (celui de gauche à comme titre FORUM et celui de droite VENTE/ACHAT), chacun menant
+	La page d'accueil sera programmée en HTML/CSS/PHP/JAVASCRIPT.
+    Dans cette page se trouve les liens suivants et leurs emplacements :
+        -Dans la partie supérieure de la page se trouve le logo et le titre du site (qui amène à la page d'accueil) ainsi que, sur la droite, la zone de connexion
+        et d'inscription (celle-ci amène à la page d'inscription).
+        -En dessous, un slider à défilement de droite à gauche représentant les différents sports sous forme de photos.
+        Chaque photo est un lien qui amène soit sur le forum, soit sur la partie vente/achat correspondant au sport.
+        -Au centre, deux blocs sont affichés (celui de gauche a comme titre FORUM et celui de droite VENTE/ACHAT), chacun menant
         à leur page web respective.
-        -En dessous peut-être un autre bloc module
-        -En bas de page ce trouve un compteur de visite à gauche et tout ce qui concerne les Credits/Contacts etc.. à droite.
+        -En dessous peut-être un autre bloc module.
+        -En bas de page se trouve un compteur de visites à gauche et tout ce qui concerne les crédits/contacts à droite.
 
 
 Inscription-- Axel
-    L'inscription se fera sous forme de formulaire et sera programmer en HTML/CSS/PHP en liaison avec une base de donnée.
-    Dans cette page ce trouve les liens suivants et leurs emplacements :
-        -Dans la partie supérieur de la page se trouve le logo et le titre du site (qui amene à la page d'accueil) ainsi que, sur la droite, la zone de connexion
-        et d'inscription (celle-ci amene à la page d'inscription).
+    L'inscription se fera sous forme de formulaire et sera programmée en HTML/CSS/PHP en liaison avec une base de donnée.
+    Dans cette page se trouve les liens suivants et leurs emplacements :
+        -Dans la partie supérieure de la page se trouve le logo et le titre du site (qui amène à la page d'accueil) ainsi que, sur la droite, la zone de connexion
+        et d'inscription (celle-ci amène à la page d'inscription).
    		-Au centre, un formulaire dans un bloc sera affiché.
 		 	La personne faisant son inscription devra fournir:
 		        - son pseudo
 		        - son mot de passe
 		        - son adresse électronique 
-		        - ses coordonnées (Nom, Prenom, Adresse, etc..)
+		        - ses coordonnées (Nom, Prénom, Adresse, etc..)
 		        - possibilité d'importer une image pour son avatar
 		        - et un bouton enregistrer
-		-En bas de page ce trouve un compteur de visite à gauche et tout ce qui concerne les Credits/Contacts etc.. à droite.
+		-En bas de page se trouve un compteur de visite à gauche et tout ce qui concerne les crédits/contacts à droite.
     Si un compte possède déjà le même pseudo ou adresse mail, il sera impossible de s'inscrire,
-    toute données enregistrés étant stocker dans la base de données préconçu pour.
+    toute donnée enregistrée étant stockée dans la base de données préconçue pour.
     
   
 Forum-- Julien/Matthieu
 
 
 Achat/Vente-- Axel/Alexis
-	La page d"achat/vente" sera programmer en HTML/CSS/PHP.
-	Dans cette page ce trouve les liens suivants et leurs emplacements :
-        -Dans la partie supérieur de la page se trouve le logo et le titre du site (qui amene à la page d'accueil) ainsi que, sur la droite, la zone de connexion
-        et d'inscription (celle-ci amene à la page d'inscription).
-   		-Au centre, un bloc sera affiché avec plusieurs onglets comme décrit ci-dessous :
+	La page d"achat/vente" sera programmée en HTML/CSS/PHP.
+	Dans cette page se trouve les liens suivants et leurs emplacements :
+        -Dans la partie supérieure de la page se trouvent le logo et le titre du site (qui amène à la page d'accueil) ainsi que, sur la droite, la zone de connexion
+        et d'inscription (celle-ci amène à la page d'inscription).
+   		-Au centre, un bloc sera affiché avec plusieurs onglets comme décrits ci-dessous :
    			*Sur le dessus du bloc
    				-l'onglet Achat
    				-l'onglet Vente
    			*Sur le côté gauche
-   				-Plusieurs onglets de differentes catégorie de sport (tennis, foot, basket...) qui,
-   				quand activé (seulement un à la fois), affichent leur sous catégorie dans des onglets plus petits (chaussure, équipement...)
-   			Si l'onglet Achat est séléctionné, le bloc affiche les différents produits mis en vente sur le site correspondant
+   				-Plusieurs onglets de différentes catégories de sport (tennis, foot, basket...) qui,
+   				quand activés (seulement un à la fois), affichent leurs sous catégorie dans des onglets plus petits (chaussure, équipement...)
+   			Si l'onglet Achat est sélectionné, le bloc affiche les différents produits mis en vente sur le site correspondant
    			à la recherche.
    			Si l'onglet Vente est sélectionné, le bloc affiche un formulaire à remplir pour pouvoir mettre en vente son produit
    			comme suis :
    				- une(des) image(s) du produit
 				- le dénominatif du produit 
-				- le sport rélié au produit mis en vente (Foot, Tennis, etc..) sous forme de liste déroulante
+				- le sport relié au produit mis en vente (Foot, Tennis, etc..) sous forme de liste déroulante
 				- le type du produit mis en vente (ballon, chaussure, ect...) sous forme de liste déroulante
 				- les infos du vendeur (nom, adresse, tel, etc..)
 				- le prix
 				- et un bouton envoyer
-		-En bas de page ce trouve un compteur de visite à gauche et tout ce qui concerne les Credits/Contacts etc.. à droite.
+		-En bas de page se trouve un compteur de visite à gauche et tout ce qui concerne les crédits/contacts à droite.
 
 
 Album photo par ligue-- Julien/Matthieu
 	Admin de la ligue qui gère cet album
 
 
-Compteur visite - Julien
-	Nombre de visiteur conecté 
+Compteur visites - Julien
+	Nombre de visiteurs connectés 
