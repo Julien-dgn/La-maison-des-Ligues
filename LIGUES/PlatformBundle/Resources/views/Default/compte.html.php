@@ -45,7 +45,7 @@
 
 							if($resultat[0] == 0)
 							{
-								?> <br/><br/><br/><section id= "error"><b>PSEUDO OU MOT DE PASSE INVALIDE !</section><br/><br/>
+								?> <br/><br/><br/><section id= "error"><b>PSEUDO OU MOT DE PASSE INVALIDE !</b></section><br/><br/>
 								<a href= "<?php $url = $this->get('router')->generate('ligues_platform_forum_compte', array(),true); echo $url; ?>">
 									<input type= "button" name= "lien_deconnexion" value= "RETOUR" class= "boutton"/>
 								</a> <?php
@@ -55,7 +55,7 @@
 							{
 								$pseudo = $_POST['pseudo'];
 								$_SESSION['pseudo'] = $pseudo;
-								?> <br/><br/><br/><section id= "valide"><b>VOUS ETES CONNECTE !</section>
+								?> <br/><br/><br/><section id= "valide"><b>VOUS ETES CONNECTE !</b></section>
 								<br/><br/>Cliquer sur le lien pour accéder à votre compte:<br/><br/> <a href= "<?php $url = $this->get('router')->generate('ligues_platform_forum_compte', array(),true); echo $url; ?>">
 									<input type= "button" name= "lien_deconnexion" value= "compte" class= "boutton"/>
 								</a> <?php

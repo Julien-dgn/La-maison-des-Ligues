@@ -45,4 +45,10 @@ class DefaultController extends Controller
     {
         return $this->render('LIGUESPlatformBundle:Default:ajouter_article.html.php');
     }
+
+    public function voir_articleAction()
+    {
+        return $this->render('LIGUESPlatformBundle:Default:voir_article.html.php');
+    }
+
 }

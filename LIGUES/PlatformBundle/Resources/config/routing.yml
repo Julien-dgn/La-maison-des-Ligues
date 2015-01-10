@@ -26,6 +26,10 @@ ligues_platform_forum_espace_membre_ajouter_article_formulaire:
     path:     /MaisonDesLigue-forum-espace-membre-ajouter-article-formulaire
     defaults: { _controller: LIGUESPlatformBundle:Default:ajouter_article_formulaire }
 
-ligues_platform_forum_espace_membre_ajouter_article_formulaire:
+ligues_platform_forum_espace_membre_ajouter_article:
     path:     /MaisonDesLigue-forum-espace-membre-ajouter-article
     defaults: { _controller: LIGUESPlatformBundle:Default:ajouter_article }
+
+ligues_platform_forum_espace_membre_voir_article:
+    path:     /MaisonDesLigue-forum-espace-membre-voir-article
+    defaults: { _controller: LIGUESPlatformBundle:Default:voir_article }

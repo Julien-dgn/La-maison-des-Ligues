@@ -5,13 +5,105 @@
 
 	<body>									
 		<section id= "categorieMembre">		<!-- CODE -->
-			<form method= "post" action= "<?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre_ajouter_article', array(),true); echo $url; ?>">
+			<form method= "post" action= "<?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre_ajouter_article_formulaire', array(),true); echo $url; ?>">
 					<section id= "titre_emplacement">
-						<br/>PAGE: FOOTBALL -- ajouter un article dans la catégorie: 
+						<br/>PAGE: FOOTBALL -- Ajouter un article dans la catégorie: 
 						<select name= "article_foot" class= "select"><option id = "foot">FOOTBALL</option></select> 
 						<input type= "submit" name= "cree" class= "boutton" value= "CREER"/>
 					</section>
+					<br/>
 			</form>
+			<form method= "post" action= "<?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre_voir_article', array(),true); echo $url; ?>">
+					<section id= "affiche_article_foot">
+						<?php
+						include('connexionBase.html.php');
+						//initialisation des variables
+						$nombreLimit1= 0;
+						$nombreLimitV= ', ';
+						$nombreLimit2= 4;
+						$requete= 'SELECT id, titre_article, categorie_article, message FROM article WHERE categorie_article = "FOOTBALL" LIMIT ';
+
+						//condition 
+						if(!empty($_POST['boutton_page']) && $_POST['boutton_page'] == 1){
+							$nombreLimit1 =0;
+						}
+						else if(!empty($_POST['boutton3_page'])){
+							$nombreLimit1= $_POST['boutton3_page']*4-4;
+						}
+						else if(!empty($_POST['boutton2_page'])){
+							$nombreLimit1= $_POST['boutton2_page']*4-4;
+						}
+						else if(!empty($_POST['boutton_page'])){
+							$nombreLimit1= $_POST['boutton_page']*4-4;
+						}
+
+						$touteRequete= $requete.$nombreLimit1.$nombreLimitV.$nombreLimit2;
+						$req= $base->query($touteRequete); // requête sql SELECT
+
+						$nomInput =0;
+						$numeroID=0;
+						$nbResultat=0;
+						while($recherche= $req->fetch()){
+							$numeroID++;
+							$nomInput++;
+							$nbResultat++;
+							echo '<section id= "case_select"><br/>'.'<section id= "espace_titre">TITRE: '.'</section>'.'<section id= "color_yellow">'.$recherche['titre_article'].'</section>'.
+							'<section id= "espace_titre2">'.' CATEGORIE: '.'</section>'.'<section id= "color_yellow2">'.$recherche['categorie_article'].'</section>';
+							?> <input type= "submit" name= "voir_article<?php echo$nomInput; ?>" class= "boutton" value= "VOIR">
+							<select name= "id<?php echo $numeroID?>" class= "select">
+								<option id= "<?php echo $recherche['id']; ?>"><?php echo $recherche['id']; ?></option>
+							</select></section><br/><br/>
+							<?php
+						}
+						?>
+						
+						<section id= "titre_emplacement_bas">
+							<br/>NOMBRE DE RESULTAT: <select name= "nbResultat" class= "select"><option id= "<?php echo $nbResultat; ?>"><?php echo $nbResultat; ?></option></select>
+			</form>	
+			<form method= "post" action= "<?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre_categorie_foot', array(),true); echo $url; ?>">		
+							 	Page: <?php 
+								
+								if(!empty($_POST['boutton_page']) && $_POST['boutton_page'] <= 1){
+									$page= $_POST['boutton_page'];
+									$boutton_actif= "on";
+									$boutton2_actif= "off";
+									$boutton3_actif= "off";
+								}
+								else if(!empty($_POST['boutton3_page'])){
+									$page= $_POST['boutton3_page']-1;
+									$boutton_actif= "off";
+									$boutton2_actif= "on";
+									$boutton3_actif= "off";
+								}
+								else if(!empty($_POST['boutton2_page'])){
+									$page= $_POST['boutton2_page'] -1;
+									$boutton_actif= "off";
+									$boutton2_actif= "on";
+									$boutton3_actif= "off";
+								}
+								else if(!empty($_POST['boutton_page'])){
+									$page= $_POST['boutton_page'] -1;
+									$boutton_actif= "off";
+									$boutton2_actif= "on";
+									$boutton3_actif= "off";
+								}
+								else{
+									$page =1;
+									$boutton_actif= "on";
+									$boutton2_actif= "off";
+									$boutton3_actif= "off";
+								}
+								?><input type= "submit" name= "boutton_page" <?php if($boutton_actif == "on"){ ?> class= "boutton_actif" <?php }else{ ?>class= "boutton_arrondie" <?php } ?> value= "<?php echo $page ?>"/>
+								  <input type= "submit" name= "boutton2_page" <?php if($boutton2_actif == "on"){ ?> class= "boutton_actif" <?php }else{ ?>class= "boutton_arrondie" <?php } ?> value= "<?php echo $page+1 ?>"/>
+								  <input type= "submit" name= "boutton3_page" <?php if($boutton3_actif == "on"){ ?> class= "boutton_actif" <?php }else{ ?>class= "boutton_arrondie" <?php } ?> value= "<?php echo $page+2 ?>"/>
+								
+							<?php 
+
+							?>
+			</form>
+						</section>
+					</section>
+			
 		</section>
 	</body>
 

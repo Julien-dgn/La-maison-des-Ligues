@@ -46,7 +46,7 @@
 	#menue{
 	height:80px;
 	width:1300px;
-	background-color: DodgerBlue;
+	background-image: -webkit-linear-gradient(right top, #6495ED 0%, #00FFFF 100%);;
 	border-radius: 3px;
 	}
 
@@ -95,12 +95,23 @@
 	/* titre de l'emplacement de page */
 
 	#titre_emplacement{
-	height:50px;
+	height:65px;
 	width:1000px;
-	background-color: Teal;
-	border-radius:5px;
+	background-image: -webkit-linear-gradient(right top, #008080 0%, #00CED1 100%);
+	border-radius:15px;
 	margin-left:11.5%;
 	color:yellow;
+	}
+
+	#titre_emplacement_bas{
+	height:65px;
+	width:1000px;
+	background-image: -webkit-linear-gradient(right top, #008080 0%, #00CED1 100%);
+	border-radius:15px;
+	margin-left:11.5%;
+	color:yellow;
+	float: left;
+	margin-top: 0.9%;
 	}
 
 	/* couleur lien + soulignement des liens désactivé */
@@ -139,7 +150,7 @@
 	#espace_membre_news{
 	height:100px;
 	width:1000px;
-	background-color: Teal;
+	background-image: -webkit-linear-gradient(right top, #008080 0%, #00CED1 100%);
 	border-radius:5px;
 	margin-left:11.5%;
 	}
@@ -147,7 +158,7 @@
 	#espace_membre_categorie{
 	height:100px;
 	width:1000px;
-	background-color: Teal;
+	background-image: -webkit-linear-gradient(right top, #008080 0%, #00CED1 100%);
 	border-radius:5px;
 	margin-left:11.5%;
 	}
@@ -155,7 +166,7 @@
 	#espace_membre_aide_question{
 	height:100px;
 	width:1000px;
-	background-color: Teal;
+	background-image: -webkit-linear-gradient(right top, #008080 0%, #00CED1 100%);
 	border-radius:5px;
 	margin-left:11.5%;
 	}
@@ -175,7 +186,7 @@
 	#categorie_foot{
 	height:100px;
 	width:1000px;
-	background-color: Teal;
+	background-image: -webkit-linear-gradient(right top, #008080 0%, #00CED1 100%);
 	border-radius:5px;
 	margin-left:11.5%;
 	}
@@ -183,7 +194,7 @@
 	#categorie_tennis{
 	height:100px;
 	width:1000px;
-	background-color: Teal;
+	background-image: -webkit-linear-gradient(right top, #008080 0%, #00CED1 100%);
 	border-radius:5px;
 	margin-left:11.5%;
 	}
@@ -191,16 +202,46 @@
 	#categorie_handball{
 	height:100px;
 	width:1000px;
-	background-color: Teal;
+	background-image: -webkit-linear-gradient(right top, #008080 0%, #00CED1 100%);
 	border-radius:5px;
 	margin-left:11.5%;
 	}
 
 	/* categorie foot */
 
-	
+	#color_yellow{
+	margin-left: 1%;
+	color:yellow;
+	float: left;
+	width: 200px;
+	}
 
-	/* Page ajouter_article */
+	#color_yellow2{
+	margin-left: 1%;
+	color:yellow;
+	float: left;
+	width: 110px;
+	}
+
+	#case_select{
+	height:70px;
+	width:1000px;
+	background-image: -webkit-linear-gradient(right top, #008080 0%, #00CED1 100%);
+	border-radius:5px;
+	margin-left:11.5%;
+	}
+
+	#espace_titre{
+	float: left;
+	margin-left: 20%;
+	}
+
+	#espace_titre2{
+	float: left;
+	margin-left: 10%;
+	}
+
+	/* Page ajouter article formulaire*/
 
 	#Page_ajouter_article{
 	height:600px;
@@ -246,6 +287,18 @@
 	margin-left: 42%;
 	}
 
+	/* Page ajouter article */
+
+	#Page_ajouter_article2{
+	height:600px;
+	width:1300px;
+	margin-left:16%;
+	background-color: DodgerBlue;
+	text-align: center;
+	color:white;
+	border-radius:3px;
+	}
+
 	/* Page Compte */
 
 	#pageCompte{
@@ -277,6 +330,17 @@
 	.select{
 	background-color:green;
 	color: white;
+	}
+
+	.boutton_arrondie{
+	border-radius: 10px;
+	background-color:gray;
+	color:white;
+	}
+	.boutton_actif{
+	border-radius: 10px;
+	background-color:DeepSkyBlue;
+	color:white;
 	}
 
 	/* Etat */
