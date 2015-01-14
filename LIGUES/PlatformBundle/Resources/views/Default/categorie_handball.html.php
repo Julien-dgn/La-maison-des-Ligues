@@ -11,8 +11,8 @@
 					<a href= " <?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre_categorie_membre', array(),true); echo $url; ?>">
 						<input type= "button" name= "retour" class= "bouton_lien_repondre" value= "RETOUR"/>
 					</a>
-					-- PAGE: FOOTBALL -- Ajouter un article dans la catégorie: 
-						<select name= "article_foot" class= "select"><option id = "foot">FOOTBALL</option></select> 
+					-- PAGE: HANDBALL -- Ajouter un article dans la catégorie: 
+						<select name= "article_foot" class= "select"><option id = "foot">HANDBALL</option></select>
 						<input type= "submit" name= "cree" class= "bouton_valider_repondre" value= "CREER"/>
 					</section>
 					<br/>
@@ -25,7 +25,7 @@
 						$nombreLimit1= 0;
 						$nombreLimitV= ', ';
 						$nombreLimit2= 4;
-						$requete= 'SELECT id, titre_article, categorie_article, message FROM article WHERE categorie_article = "FOOTBALL" LIMIT ';
+						$requete= 'SELECT id, titre_article, categorie_article, message FROM article WHERE categorie_article = "HANDBALL" LIMIT ';
 
 						//condition 
 						if(!empty($_POST['boutton_page']) && $_POST['boutton_page'] == 1){
@@ -54,9 +54,8 @@
 							echo '<section id= "case_select"><br/>'.'<section id= "espace_titre">TITRE: '.'</section>'.'<section id= "color_yellow">'.$recherche['titre_article'].'</section>'.
 							'<section id= "espace_titre2">'.' CATEGORIE: '.'</section>'.'<section id= "color_yellow2">'.$recherche['categorie_article'].'</section>';
 							?> <input type= "submit" name= "voir_article<?php echo$nomInput; ?>" class= "bouton_lien_repondre" value= "VOIR">
-							<select name= "id<?php echo $numeroID?>" class= "select">
-								<option id= "<?php echo $recherche['id']; ?>"><?php echo $recherche['id']; ?></option>
-							</select></section><br/><br/>
+							<input type= "hidden" name= "id<?php echo $numeroID?>" class= "select" value= "<?php echo $recherche['id']; ?>">
+							</section><br/><br/>
 							<?php
 						}
 						?>
@@ -64,7 +63,7 @@
 						<section id= "titre_emplacement_bas">
 							<br/>NOMBRE DE RESULTAT: <select name= "nbResultat" class= "select"><option id= "<?php echo $nbResultat; ?>"><?php echo $nbResultat; ?></option></select>
 			</form>	
-			<form method= "post" action= "<?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre_categorie_foot', array(),true); echo $url; ?>">		
+			<form method= "post" action= "<?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre_categorie_handball', array(),true); echo $url; ?>">	
 							 	Page: <?php 
 								
 								if(!empty($_POST['boutton_page']) && $_POST['boutton_page'] <= 1){

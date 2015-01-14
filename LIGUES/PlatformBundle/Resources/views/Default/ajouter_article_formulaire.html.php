@@ -5,8 +5,14 @@
 
 	<body>
 		<section id= "Page_ajouter_article"> <!-- CODE -->
-			<section id= "titre_emplacement"><br/>PAGE: AJOUTER UN ARTICLE -- CATEGORIE: <?php echo $_POST['article_foot']; ?></section>
-  <br/><br/><section id= "formulaire_article">
+			<section id= "titre_emplacement"><br/>
+				<a href= " <?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre_categorie_foot', array(),true); echo $url; ?>">
+							<input type= "button" name= "retour" class= "boutton" value= "RETOUR"/>
+				</a>
+				-- PAGE: AJOUTER UN ARTICLE -- CATEGORIE: <?php echo $_POST['article_foot']; ?>
+			</section>
+  			<br/><br/>
+  			<section id= "formulaire_article">
 				<section id= "alignement"></section>
 					<br/><br/>
 			<form method= "post" action= "<?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre_ajouter_article', array(),true); echo $url; ?>">
@@ -21,7 +27,7 @@
 					</section>
 					<br/>
 					<section id= "ajout_article_valider">
-						<input type= "submit" name= "ajout_article_valider" class= "boutton" value= "envoyer"/>
+						<input type= "submit" name= "ajout_article_valider" class= "boutton" value= "ENVOYER"/>
 					</section>
 				</form>
 			</section>

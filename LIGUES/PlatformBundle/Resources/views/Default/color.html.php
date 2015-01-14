@@ -46,7 +46,7 @@
 	#menue{
 	height:80px;
 	width:1300px;
-	background-image: -webkit-linear-gradient(right top, #6495ED 0%, #00FFFF 100%);;
+	background-image: -webkit-linear-gradient(right top, #6495ED 0%, #00FFFF 100%);
 	border-radius: 3px;
 	}
 
@@ -55,6 +55,15 @@
 	width:324px;
 	float: left;
 	border-right: 1px solid white;
+	transition-property: color, width, height;
+	}
+
+	#accueil:hover{
+	height:80px;
+	width:324px;
+	float: left;
+	border-right: 1px solid white;
+	color:red;
 	}
 
 	#espace_membre{
@@ -82,10 +91,11 @@
 	#footer{
 	height:50px;
 	width:1300px;
-	background-color: DodgerBlue;
+	background-image: -webkit-linear-gradient(right top, #6495ED 0%, #00FFFF 100%);
 	margin-left:16%;
 	border-radius:3px;
 	color:white;
+	float: left;
 	}
 
 	#editeur_signature{
@@ -97,7 +107,7 @@
 	#titre_emplacement{
 	height:65px;
 	width:1000px;
-	background-image: -webkit-linear-gradient(right top, #008080 0%, #00CED1 100%);
+	background-image: -webkit-linear-gradient(right top, #6495ED 0%, #00FFFF 100%);
 	border-radius:15px;
 	margin-left:11.5%;
 	color:yellow;
@@ -106,7 +116,7 @@
 	#titre_emplacement_bas{
 	height:65px;
 	width:1000px;
-	background-image: -webkit-linear-gradient(right top, #008080 0%, #00CED1 100%);
+	background-image: -webkit-linear-gradient(right top, #6495ED 0%, #00FFFF 100%);
 	border-radius:15px;
 	margin-left:11.5%;
 	color:yellow;
@@ -129,7 +139,7 @@
 	height:600px;
 	width:1300px;
 	margin-left:16%;
-	background-color: DodgerBlue;
+	background-image: -webkit-linear-gradient(right top, #6495ED 0%, #00FFFF 100%);
 	text-align: center;
 	color:white;
 	border-radius:3px;
@@ -141,7 +151,6 @@
 	height:600px;
 	width:1300px;
 	margin-left:16%;
-	background-color: DodgerBlue;
 	text-align: center;
 	color:white;
 	border-radius:3px;
@@ -177,7 +186,6 @@
 	height:600px;
 	width:1300px;
 	margin-left:16%;
-	background-color: DodgerBlue;
 	text-align: center;
 	color:white;
 	border-radius:3px;
@@ -250,7 +258,7 @@
 	background-color: DodgerBlue;
 	text-align: center;
 	color:white;
-	border-radius:3px;
+	border-radius:30px;
 	}
 
 	#formulaire_article{
@@ -296,7 +304,7 @@
 	background-color: DodgerBlue;
 	text-align: center;
 	color:white;
-	border-radius:3px;
+	border-radius:30px;
 	}
 
 	/* Page Compte */
@@ -305,7 +313,7 @@
 	height:600px;
 	width:1300px;
 	margin-left:16%;
-	background-color: DodgerBlue;
+	background-image: -webkit-linear-gradient(right top, #6495ED 0%, #00FFFF 100%);
 	text-align: center;
 	color:white;
 	border-radius:3px;
@@ -322,13 +330,15 @@
 	}
 
 	/* class */
+
 	.boutton{
 	clear: both;
-	background-color:DodgerBlue;
+	background-image: -webkit-linear-gradient(right top, #0e7e9a 0%, #4fd1f2 100%);
 	color: white;
+	border-radius: 15px;
 	}
 	.select{
-	background-color:green;
+	background-image: -webkit-linear-gradient(right top, #0e7e9a 0%, #4fd1f2 100%);
 	color: white;
 	}
 
@@ -341,6 +351,18 @@
 	border-radius: 10px;
 	background-color:DeepSkyBlue;
 	color:white;
+	}
+
+	.bouton_valider_repondre{
+	background-image: -webkit-linear-gradient(right top, #00a43a 0%, #52df84 100%);
+	color: white;
+	border-radius: 15px;
+	}
+
+	.bouton_lien_repondre{
+	background-image: -webkit-linear-gradient(right top, #0e7e9a 0%, #4fd1f2 100%);
+	color: white;
+	border-radius: 15px;
 	}
 
 	/* Etat */
@@ -440,5 +462,55 @@
 	height: 0px;
 	}
 
+	/* message -- commentaire */
+
+	#info_message{
+	height:152px;
+	width:200px;
+	background-image: -webkit-linear-gradient(right top, #008080 0%, #00CED1 100%);
+	float: left;
+	border-radius: 7px;
+	margin-right: 10px;
+	}
+
+	#text_article{
+	background-image: -webkit-linear-gradient(right top, #008080 0%, #00CED1 100%);
+	color: white;
+	float: left;
+	}
+
+	#repondre_article{
+	height:120px;
+	width:865px;
+	margin-left:16%;
+	background-image: -webkit-linear-gradient(right top, #008080 0%, #00CED1 100%);
+	border-radius: 7px;
+	margin-right: 10px;
+	float: left;
+	border-top:1 solid gray;
+	margin-top: 15px;
+	}
+
+	#pseudo_repondre_article{
+	width: 200px;
+	height: 117px;
+	float: left;
+	}
+
+	#bouton_repondre_article{
+	float: left;
+	}
+
+	#text_com{
+	background-image: -webkit-linear-gradient(right top, #008080 0%, #00CED1 100%);
+	color: white;
+	float: left;
+	}
+
+	#case_commentaire{
+	width: 1200px;
+	height: 250px;
+	float: left;
+	}
 
 </style>

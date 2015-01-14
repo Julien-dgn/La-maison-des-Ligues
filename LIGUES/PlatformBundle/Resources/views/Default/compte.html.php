@@ -78,7 +78,10 @@
 								</section>
 								<section>
 									<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-									Pas de compte ? Creer un compte<a href= "<?php $url = $this->get('router')->generate('ligues_platform_forum_compte_formulaire', array(),true); echo $url ?>"> ICI !</a>
+									Pas de compte ? 
+								<a href= "<?php $url = $this->get('router')->generate('ligues_platform_forum_compte_formulaire', array(),true); echo $url ?>"> 
+									<input type= "button" name= "lien" class= "bouton_valider_repondre" value= "CREER UN COMPTE"/>
+								</a>
 								</section>
 							</form>
 
