@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Mar 06 Janvier 2015 à 15:18
+-- Généré le: Mer 14 Janvier 2015 à 13:38
 -- Version du serveur: 5.6.12-log
 -- Version de PHP: 5.4.12
 
@@ -32,10 +32,19 @@ CREATE TABLE IF NOT EXISTS `article` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `titre_article` varchar(30) NOT NULL,
   `categorie_article` varchar(30) NOT NULL,
+  `message` longtext NOT NULL,
   `pseudo` varchar(30) NOT NULL,
   `nombre_message` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Contenu de la table `article`
+--
+
+INSERT INTO `article` (`id`, `titre_article`, `categorie_article`, `message`, `pseudo`, `nombre_message`) VALUES
+(1, 'titre', 'FOOTBALL', 'message', 'makabay', 0),
+(2, 'foot 2', 'FOOTBALL', 'message', 'makabay', 0);
 
 -- --------------------------------------------------------
 
@@ -60,6 +69,31 @@ CREATE TABLE IF NOT EXISTS `compte` (
 
 INSERT INTO `compte` (`id`, `pseudo`, `password`, `email`, `age`, `hobbie`, `en_ligne`) VALUES
 (1, 'makabay', '123', 'makabay@hotmail.fr', 19, 'tennis', 'non');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `reponse_article`
+--
+
+CREATE TABLE IF NOT EXISTS `reponse_article` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_article` int(11) NOT NULL,
+  `categorie_aticle_reponse` varchar(30) NOT NULL,
+  `pseudo` varchar(30) NOT NULL,
+  `message` longtext NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Contenu de la table `reponse_article`
+--
+
+INSERT INTO `reponse_article` (`id`, `id_article`, `categorie_aticle_reponse`, `pseudo`, `message`) VALUES
+(1, 1, 'FOOTBALL', 'makabay', 'hh'),
+(2, 1, 'FOOTBALL', 'makabay', 'aller montre moi le chemin'),
+(3, 2, 'FOOTBALL', 'makabay', 'ok'),
+(4, 2, 'FOOTBALL', 'makabay', 'message\r\nmessagemessage\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nmessage');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
