@@ -2,7 +2,7 @@
 	<?php include('head.html.php'); ?>		<!-- head -->
 	
 	<?php include('header.html.php') ?>		<!-- header -->
-
+	
 	<body>									
 		<section id= "pageAccueil">			<!-- CODE -->
 			<br/><br/><br/>ACCUEIL !

@@ -30,7 +30,7 @@
 				 					else{
 				 						?> <script> alert('FELICITATION VOTRE COMPTE A ETE CREER AVEC SUCCES'); </script><?php
 
-				 						$insert= $base->prepare('INSERT INTO compte(pseudo, password, email, age, hobbie, en_ligne) VALUES (?,?,?,?,?,?)');  //insert dans la base de donné
+				 						$insert= $base->prepare('INSERT INTO compte(pseudo, password, email, age, hobbie, en_ligne, status) VALUES (?,?,?,?,?,?,"user")');  //insert dans la base de donné
 										$insert->execute(array($_POST['pseudo'], $_POST['password'], $_POST['email'], $_POST['age'], $_POST['hobbie'], 'non'));  //prend les variables $_POST comme paramètres
 										$insert->closeCursor();
 									}
@@ -47,19 +47,19 @@
 			<form method= "post" action= "<?php $url = $this->get('router')->generate('ligues_platform_forum_compte_formulaire', array(),true); echo $url; ?>">
 				<section id= "alignement">
 					<section id= "pseudo_formulaire">
-						<section id= "pseudo_formulaire_alignement">PSEUDO:</section> <input type= "text" name= "pseudo"/>
+						<section id= "pseudo_formulaire_alignement">PSEUDO:</section> <input type= "text" name= "pseudo" required />
 					</section>
 					<section id= "password_formulaire">
-						<section id= "password_formulaire_alignement">PASSWORD:</section>  <input type= "password" name= "password"/>
+						<section id= "password_formulaire_alignement">PASSWORD:</section>  <input type= "password" name= "password" required />
 					</section>
 					<section id= "email_formulaire">
-						<section id= "email_formulaire_alignement">EMAIL:</section> <input type= "text" name= "email"/>
+						<section id= "email_formulaire_alignement">EMAIL:</section> <input type= "text" name= "email" required />
 					</section>
 					<section id= "age_formulaire">
-						<section id= "age_formulaire_alignement">AGE:</section> <input type= "text" name= "age"/>
+						<section id= "age_formulaire_alignement">AGE:</section> <input type= "text" name= "age" required />
 					</section>
 					<section id= "hobbie_formulaire">
-						<section id= "hobbie_formulaire_alignement">HOBBIE:</section> <input type= "text" name= "hobbie"/>
+						<section id= "hobbie_formulaire_alignement">HOBBIE:</section> <input type= "text" name= "hobbie" required />
 					</section>
 				
 				</section> <!-- Fin section aligenment -->

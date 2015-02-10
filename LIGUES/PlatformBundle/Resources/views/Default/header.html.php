@@ -1,31 +1,48 @@
-
-
+<?php
+	if(empty($_SESSION)){
+		session_start();
+	}
+?>
 		<header id= "header">							<!-- Header -->
 			<section id= "site_forum">					<!-- Lien qui permet de passer du site au forum -->
-				<section id= "site">
-					<br/><a href="">SITE</a>
-				</section>
+				<a href="">
+					<section id= "site">
+						<br/>SITE
+					</section>
+				</a>
 
+				<a href="">
 				<section id= "forum">
-					<br/><a href="">FORUM</a>
+					<br/>FORUM
 				</section>
+				</a>
+				
 			</section>
 
 			<section id= "menue">						<!-- Menu -->
-				<section id= "accueil">
-					<br/><a href= " <?php $url = $this->get('router')->generate('ligues_platform_forum', array(),true); echo $url; ?> " >ACCUEIL</a>
-				</section>
+				<a href= " <?php $url = $this->get('router')->generate('ligues_platform_forum', array(),true); echo $url; ?> " >
+					<section id= "accueil">
+						<br/>ACCUEIL
+					</section>
+				</a>
 
-				<section id= "espace_membre">
-					<br/><a href=" <?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre', array(),true); echo $url; ?>">ESPACE MEMBRE</a>
-				</section>
+				
+					<a href=" <?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre', array(),true); echo $url; ?>">
+						<section id= "espace_membre">
+							<br/>ESPACE MEMBRE
+						</section>
+					</a>
+				
+				<a href=" <?php $url = $this->get('router')->generate('ligues_platform_forum_compte', array(),true); echo $url ?> ">
+					<section id= "compte">
+						<br/><?php if(!empty($_SESSION['pseudo'])){echo $_SESSION['pseudo'];} else{ echo 'COMPTE'; }?>
+					</section>
+				</a>
 
-				<section id= "compte">
-					<br/><a href=" <?php $url = $this->get('router')->generate('ligues_platform_forum_compte', array(),true); echo $url ?> ">COMPTE</a>
-				</section>
-
-				<section id= "support_aide">
-					<br/><a href="">SUPPORT/BUG</a>
-				</section>
+				<a href="">
+					<section id= "support_aide">
+						<br/>SUPPORT/BUG
+					</section>
+				</a>
 			</section>
 		</header> <br/>

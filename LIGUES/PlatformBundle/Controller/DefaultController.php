@@ -51,4 +51,18 @@ class DefaultController extends Controller
         return $this->render('LIGUESPlatformBundle:Default:voir_article.html.php');
     }
 
+    public function newsAction()
+    {
+        return $this->render('LIGUESPlatformBundle:Default:news.html.php');
+    }
+
+    public function supprimer_modifierAction()
+    {
+        return $this->render('LIGUESPlatformBundle:Default:supprimer_modifier.html.php');
+    }
+
+    public function supprimer_modifier_commentaireAction()
+    {
+        return $this->render('LIGUESPlatformBundle:Default:supprimer_modifier_commentaire.html.php');
+    }
 }

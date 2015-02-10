@@ -27,7 +27,7 @@
 					</section>
 					<br/>
 					<section id= "ajout_article_valider">
-						<input type= "submit" name= "ajout_article_valider" class= "boutton" value= "ENVOYER"/>
+						<input type= "submit" name= "ajout_article_valider" class= "bouton_valider_repondre" value= "ENVOYER"/>
 					</section>
 				</form>
 			</section>

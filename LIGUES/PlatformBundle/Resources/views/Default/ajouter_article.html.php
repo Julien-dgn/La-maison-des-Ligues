@@ -1,10 +1,18 @@
-<?php session_start(); ?>
+<?php include('connexion_start.html.php'); ?>
 <html>
 	<?php include('head.html.php'); ?>		<!-- head -->
 	
 	<?php include('header.html.php') ?>		<!-- header -->
 
 	<body>
+
+		<section id= "titre_emplacement"><br/>PAGE: AJOUTER UN ARTICLE -- CATEGORIE D'ARTICLE:
+							<select name= "article_foot" class= "select">
+								<option id= "<?php echo $_POST['categorie_article']; ?>"><?php echo $_POST['categorie_article']; ?></option>
+							</select>
+		</section>
+		<br/><br/><br/>
+		
 		<section id= "Page_ajouter_article2"> <!-- CODE -->
 			<?php 
 				include('connexionBase.html.php');
@@ -41,8 +49,6 @@
 				}
 				else{
 					?><form method= "post" action= "<?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre_ajouter_article_formulaire', array(),true); echo $url; ?>">
-							<section id= "titre_emplacement"><br/>PAGE: AJOUTER UN ARTICLE -- CATEGORIE D'ARTICLE:
-							<select name= "article_foot" class= "select"><option id= "<?php echo $_POST['categorie_article']; ?>"><?php echo $_POST['categorie_article']; ?></option></select></section>
 
 							<br/><br/><br/><section id= "error"><b>VOUS N'AVEZ PAS REMPLIS TOUS LES CHAMPS!</b></section>
 

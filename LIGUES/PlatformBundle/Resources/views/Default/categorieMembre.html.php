@@ -13,9 +13,13 @@
 				
 				-- PAGE: CATEGORIE D'ARTICLE DES MEMBRES
 			</section><br/><br/>
-			<br/><br/><section id= "categorie_foot"><br/>
-			<a href= " <?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre_categorie_foot', array(),true); echo $url; ?>">FOOTBALL
-			</a></section>
+
+		<a href= " <?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre_categorie_foot', array(),true); echo $url; ?>">
+			<br/><br/>
+			<section id= "categorie_foot"><br/>
+				FOOTBALL
+			</section>
+		</a>
 			<br/><br/><section id= "categorie_tennis"><br/>TENNIS</section>
 			<br/><br/><section id= "categorie_handball"><br/>HANDBALL</section>
 			
