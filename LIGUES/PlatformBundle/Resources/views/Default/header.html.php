@@ -1,8 +1,4 @@
-<?php
-	if(empty($_SESSION)){
-		session_start();
-	}
-?>
+
 		<header id= "header">							<!-- Header -->
 			<section id= "site_forum">					<!-- Lien qui permet de passer du site au forum -->
 				<a href="">

@@ -617,6 +617,7 @@
 	width: 200px;
 	height: 117px;
 	float: left;
+	color:white;
 	}
 
 	#bouton_repondre_article{

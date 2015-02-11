@@ -1,3 +1,4 @@
+<?php include('session_start'); ?>
 <html>
 	<?php include('head.html.php'); ?>		<!-- head -->
 	

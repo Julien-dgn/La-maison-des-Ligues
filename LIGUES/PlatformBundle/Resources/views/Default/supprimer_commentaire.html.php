@@ -6,7 +6,7 @@
 								echo 'Message supprimé';
 							}
 	else{
-			$req= $base->query('SELECT message, pseudo FROM article WHERE id= \''.$_POST['id'].'\' ');
+			$req= $base->query('SELECT message, pseudo FROM reponse_article WHERE id= \''.$_POST['id'].'\' ');
 							$recherche= $req->fetch();
 							if(!empty($_POST['boutton_supprimer']) && empty($_SESSION['pseudo']) || 
 								!empty($_POST['boutton_supprimer']) && $recherche['pseudo'] != $_SESSION['pseudo']){
@@ -14,7 +14,9 @@
 							}
 			?>
 		<form method= "post" action= "<?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre_voir_article_commentaire', array(),true); echo $url; ?>">
-			Voulez-vous vraiment supprimer ce message ? <br/><br/><br/>
+			Voulez-vous vraiment supprimer ce message ? <br/>
+			Message de -<?php echo $recherche['pseudo'];?>-
+			<br/><br/>
 			<input type= "submit" name= "boutton_supprimer" class= "bouton_valider_repondre" value= "Supprimer"/>
 			<input type= "hidden" name= "pseudo" value= "<?php echo $recherche['pseudo'];?>"/>
 			<input type= "hidden" name= "supprimer" value= "supprimer"/>
