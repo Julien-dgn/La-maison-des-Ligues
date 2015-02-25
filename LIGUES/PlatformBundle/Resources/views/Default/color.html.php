@@ -596,8 +596,9 @@
 
 	#text_article{
 	background-image: url(http://localhost/Symfony/web/bundles/image_projet/texture_gris.jpg);
-	color: black;
+	color: white;
 	float: left;
+	FONT-FAMILY: Verdana;
 	}
 
 	#repondre_article{
@@ -628,6 +629,7 @@
 	background-image: url(http://localhost/Symfony/web/bundles/image_projet/texture_gris.jpg);
 	color: white;
 	float: left;
+	FONT-FAMILY: Verdana;
 	}
 
 	#case_commentaire{

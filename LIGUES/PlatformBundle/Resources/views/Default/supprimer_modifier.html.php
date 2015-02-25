@@ -23,9 +23,6 @@
 			<section id= "page_supprimer_modifier">		
 				<br/><br/>
 				<?php 
-						if(!empty($_POST['supprimer'])){
-							include('supprimer_message_article.html.php');
-						}
 					    if(!empty($_POST['editer'])){
 						include('connexionBase.html.php');  // connexion base de donnée
 						

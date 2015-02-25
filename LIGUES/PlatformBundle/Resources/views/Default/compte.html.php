@@ -1,5 +1,6 @@
-<?php include('session_start.html.php'); ?>
 <html>
+<?php session_start(); ?>
+
 	<?php include('head.html.php'); ?>		<!-- head -->
 	
 	<?php include('header.html.php') ?>	<!-- header -->
