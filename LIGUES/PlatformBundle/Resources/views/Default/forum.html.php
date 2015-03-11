@@ -1,8 +1,10 @@
-<?php include('session_start.html.php'); ?>
 <html>
+	
 	<?php include('head.html.php'); ?>		<!-- head -->
 	
 	<?php include('header.html.php') ?>		<!-- header -->
+	
+	<?php include('session_start.html.php'); ?> <!-- session_start -->
 	
 	<body>									
 		<section id= "pageAccueil">			<!-- CODE -->

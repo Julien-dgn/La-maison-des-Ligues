@@ -1,5 +1,6 @@
+<?php include('session_start.html.php'); ?> <!-- session_start -->
+
 <html>
-<?php session_start(); ?>
 
 	<?php include('head.html.php'); ?>		<!-- head -->
 	
@@ -23,8 +24,18 @@
 
 				}
 			else if(!empty($_SESSION['pseudo'])){
-		?> <form method= "post" action= "<?php $url = $this->get('router')->generate('ligues_platform_forum_compte', array(),true); echo $url; ?>">
-				<br/><br/><br/><input type= "submit" name= "deconnexion" class= "boutton" value= "deconnexion"/>
+				
+						$req= $base->query('SELECT avatar FROM compte WHERE pseudo = \''.$_SESSION['pseudo'].'\'');
+						$Select = $req->fetch(); ?>
+						<img id="imgcompte" src="http://localhost/Symfony/web/<?php echo$Select['avatar'];?>"/>
+
+			<form method= "post" action= "<?php $url = $this->get('router')->generate('ligues_platform_forum_compte_modifier', array(),true); echo $url; ?>">
+				<br/><br/><br/><input type= "submit" name= "modif" value= "Modifier son compte" class= "boutton"/></form>
+			<form method= "post" action= "<?php $url = $this->get('router')->generate('ligues_platform_forum_compte_supprimer', array(),true); echo $url; ?>">
+				<br/><br/><br/><input type= "submit" name= "suprrimer" value= "Supprimer son compte" class= "boutton"/></form>
+		 <form method= "post" action= "<?php $url = $this->get('router')->generate('ligues_platform_forum_compte', array(),true); echo $url; ?>">
+				<br/><br/><br/><input type= "submit" name= "deconnexion" value= "se deconnecter" class= "boutton"/>
+				
 			</form> <?php
 
 				

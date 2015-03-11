@@ -18,7 +18,8 @@
 								
 							</form>
 			</section>
-			<textarea id= "text_com" rows= "12" cols="105" name= "commentaire" readonly="readonly"><?php echo $affiche_commentaire['message'];?></textarea>
+			<textarea id= "text_com" rows= "15" cols="120" name= "commentaire" readonly="readonly"><?php echo $affiche_commentaire['message'];?></textarea>
+			
 		</section>
 		<?php
 		}

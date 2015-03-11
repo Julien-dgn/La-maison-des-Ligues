@@ -1,4 +1,4 @@
-<?php include('session_start.html.php'); ?>
+<?php include('connexion_start.html.php'); ?>
 <html>
 	<?php include('head.html.php'); ?>		<!-- head -->
 	
@@ -7,7 +7,7 @@
 	<body>							
 		<section id= "titre_emplacement"><!-- CODE -->
 					<br/>
-					<?php
+					<?php 
 						if(!empty($_POST['editer'])){	// option modifier séléctionné
 
 								?><a href= " <?php $url = $this->get('router')->generate('ligues_platform_forum_espace_membre_news', array(),true); echo $url; ?>">
@@ -23,6 +23,7 @@
 			<section id= "page_supprimer_modifier">		
 				<br/><br/>
 				<?php 
+
 					    if(!empty($_POST['editer'])){
 						include('connexionBase.html.php');  // connexion base de donnée
 						

@@ -1,4 +1,4 @@
-<?php include('session_start.html.php'); ?>
+<?php include('connexion_start.html.php'); ?>
 <html>
 	<?php include('head.html.php'); ?>		<!-- head -->
 	
@@ -58,12 +58,13 @@
 							<?php echo'['.$recherche['pseudo'].']';?><br/><br/><br/><br/><br/><br/>
 							Message:
 								<input type= "submit" name= "editer" class= "boutton" value= "Editer"/>
+								<input type= "submit" name= "supprimer" class= "boutton" value= "Supprimer"/>
 								<input type= "hidden" name= "id" class= "boutton" value= "<?php echo $_POST[$numeroID]; ?>"/>
 								
 							</form>
 						</section>
 
-						<textarea id= "text_article" rows= "30" cols="105" name= "message_article" readonly="readonly"><?php echo $recherche['message'];?></textarea>
+						<textarea id= "text_article" rows= "30" cols="120" name= "message_article" readonly="readonly"><?php echo $recherche['message'];?></textarea>
 					<br/>
 
 						<section id= "titre_emplacement_bas">

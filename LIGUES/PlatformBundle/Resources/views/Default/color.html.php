@@ -66,7 +66,7 @@
 	-webkit-transition-property:background-image, color;
 	transition-duration: 0.5s;
 	height:80px;
-	width:324px;
+	width:230px;
 	float: left;
 	border-right: 1px solid white;
 	color: black;
@@ -81,7 +81,7 @@
 	-webkit-transition-property:background-image, color;
 	transition-duration: 0.5s;
 	height:80px;
-	width:324px;
+	width:230px;
 	float: left;
 	border-right: 1px solid white;
 	color: black;
@@ -96,7 +96,7 @@
 	-webkit-transition-property:background-image, color;
 	transition-duration: 0.5s;
 	height:80px;
-	width:324px;
+	width:220px;
 	float: left;
 	border-right: 1px solid white;
 	color: black;
@@ -111,7 +111,7 @@
 	-webkit-transition-property:background-image, color;
 	transition-duration: 0.5s;
 	height:80px;
-	width:324px;
+	width:230px;
 	float: left;
 	color: black;
 	}
@@ -596,9 +596,8 @@
 
 	#text_article{
 	background-image: url(http://localhost/Symfony/web/bundles/image_projet/texture_gris.jpg);
-	color: white;
+	color: black;
 	float: left;
-	FONT-FAMILY: Verdana;
 	}
 
 	#repondre_article{
@@ -618,7 +617,6 @@
 	width: 200px;
 	height: 117px;
 	float: left;
-	color:white;
 	}
 
 	#bouton_repondre_article{
@@ -629,7 +627,6 @@
 	background-image: url(http://localhost/Symfony/web/bundles/image_projet/texture_gris.jpg);
 	color: white;
 	float: left;
-	FONT-FAMILY: Verdana;
 	}
 
 	#case_commentaire{
@@ -656,5 +653,58 @@
 	margin-left: 5%;
 	background-image: url(http://localhost/Symfony/web/bundles/image_projet/texture_menue.jpg);
 	}
+
+	img{
+	height:60px;
+	width:60px;
+	}
+
+	#imgcompte{
+	height:200px;
+	width:200px;
+	}
+
+		#logo{
+	-webkit-transition-property:background-image, color;
+	transition-duration: 0.5s;
+	height:80px;
+	width:154px;
+	float : top;
+	float: left;
+	border-right: 1px solid white;
+	color: black;
+	}
+
+	#pagemodifier{
+	height:600px;
+	width:1300px;
+	margin-left:10%;
+	background-image: -webkit-linear-gradient(right top, #d2d2d2 0%, #a5a5a5 100%);
+	
+	color:white;
+	border-radius:3px;
+	}
+
+	#messagerie{
+	-webkit-transition-property:background-image, color;
+	transition-duration: 0.5s;
+	height:80px;
+	width:230px;
+	float: left;
+	border-right: 1px solid white;
+	color: black;
+	}
+
+	#logo:hover{
+	background-image: -webkit-linear-gradient(right top, #6495ED 0%, #243748 100%);
+	color: white;
+	}
+
+	#messagerie:hover{
+	background-image: -webkit-linear-gradient(right top, #6495ED 0%, #243748 100%);
+	color: white;
+	}
+
+	#
 
 </style>

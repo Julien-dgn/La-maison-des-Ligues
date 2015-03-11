@@ -5,3 +5,4 @@
 		<?php include('color.html.php'); ?>
 	</head>
 	<section id= "bordure_site">
+	</section>

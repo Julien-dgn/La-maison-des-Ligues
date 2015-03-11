@@ -65,4 +65,29 @@ class DefaultController extends Controller
     {
         return $this->render('LIGUESPlatformBundle:Default:supprimer_modifier_commentaire.html.php');
     }
+
+    public function compte_supprimerAction()
+    {
+        return $this->render('LIGUESPlatformBundle:Default:compte_supprimer.html.php');
+    }
+
+    public function compte_modifierAction()
+    {
+        return $this->render('LIGUESPlatformBundle:Default:compte_modifier.html.php');
+    }
+
+    public function messagerieAction()
+    {
+        return $this->render('LIGUESPlatformBundle:Default:messagerie.html.php');
+    }
+
+     public function messagerie_ecrireAction()
+    {
+        return $this->render('LIGUESPlatformBundle:Default:messagerie_ecrire.html.php');
+    }
+
+     public function messagerie_lireAction()
+    {
+        return $this->render('LIGUESPlatformBundle:Default:messagerie_lire.html.php');
+    }
 }

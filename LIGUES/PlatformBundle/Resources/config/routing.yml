@@ -45,3 +45,23 @@ ligues_platform_forum_espace_membre_voir_article_supprimer_modifier:
 ligues_platform_forum_espace_membre_voir_article_commentaire:
     path:     /MaisonDesLigues-forum-espace-membre-voir-article-MS-commentaire
     defaults: { _controller: LIGUESPlatformBundle:Default:supprimer_modifier_commentaire }
+
+ligues_platform_forum_compte_modifier:
+    path:     /MaisonDesLigues-forum-compte-modifier
+    defaults: { _controller: LIGUESPlatformBundle:Default:compte_modifier }
+
+ligues_platform_forum_compte_supprimer:
+    path:     /MaisonDesLigues-forum-compte-supprimer
+    defaults: { _controller: LIGUESPlatformBundle:Default:compte_supprimer }
+
+ligues_platform_forum_messagerie:
+    path:     /MaisonDesLigues-forum-messagerie
+    defaults: { _controller: LIGUESPlatformBundle:Default:messagerie }
+
+ligues_platform_forum_messagerie_ecrire:
+    path:     /MaisonDesLigues-forum-messagerie-ecrire
+    defaults: { _controller: LIGUESPlatformBundle:Default:messagerie_ecrire}
+
+ligues_platform_forum_messagerie_lire:
+    path:     /MaisonDesLigues-forum-messagerie-lire
+    defaults: { _controller: LIGUESPlatformBundle:Default:messagerie_lire}
