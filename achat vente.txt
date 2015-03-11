@@ -1,0 +1,6 @@
+achat_vente_blog:
+    resource: "@AchatVenteBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+new AchatVente\BlogBundle\AchatVenteBlogBundle(),
